@@ -245,6 +245,9 @@ function interpret!(exp::Explorer, stats, cmd, args=[])
       isa(e, ArgumentError) && (return false)
       rethrow(e)
     end
+  elseif cmd == "dump"
+    GI.dump_state(Game)
+    return true
   end
   return false
 end

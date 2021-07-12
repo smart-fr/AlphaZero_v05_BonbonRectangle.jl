@@ -223,6 +223,14 @@ denote a valid action.
 function parse_action end
 
 """
+    dump_state(::Type{G}) where G <: AbstractGame :: Union{State(G), Nothing}
+
+Writes a state to the standard input, in a format readable by read_state.
+Return true.
+"""
+function dump_state end
+
+"""
     read_state(game_spec::AbstractGameSpec)
 
 Read a state from the standard input.

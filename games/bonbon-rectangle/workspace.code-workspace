@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"julia.environmentPath": "/home/smart_fr/AlphaZero.jl"
+	}
+}
